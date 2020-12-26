@@ -2,39 +2,9 @@ import java.util.Scanner;
 
 public class countE {
 
-/*    Determine and print the number of times
-      the character ‘b’ appears in the input entered by the user.
-
-     input: Test output
-            b: 0
-        output should be 0
-
-
-     input: bucket
-            b:1
-        output should be 1
-        */
-
-
-    //hint: .charAt, length(), for, index, counter,
-
-
-
-    /*  Kullanıcı tarafından girilen inputda kac tane 'b' karakteri olduğunu belirle ve print et.
-
-     input: Test output
-            b: 0
-        output 0 olmalı
-
-
-     input: bucket
-            b:1
-        output 1 olmalı
-        */
-
-
-    //hint: .charAt, length(), for, index, counter,
-
+    /*
+    Girilen bir string de kaç tane b harfi olduğunu yazdırınız.
+    */
 
     public static void main(String[] args) {
 
@@ -42,16 +12,28 @@ public class countE {
 
         String text = input.nextLine();
 
-         // code start here
-         // kodu burdan başlatın ve bu satırdan önceki kodlari değiştirmeyin
-       int counter=0;
-        for (int i = 0; i <text.length() ; i++) {
-            if(text.charAt(i)=='b'){
-                counter++;
-            }
-        }
-        System.out.println(counter);
+        // kodu burdan başlatın ve bu satırdan önceki kodlari değiştirmeyin
 
-        }
+        String bHali = text.toLowerCase().replaceAll("[^b]","");
 
+        int bSayi = bHali.length();
+
+        System.out.println(bSayi);
+
+
+        //        int donguSayac = 0;
+        //        int bSayisi = 0;
+        //
+        //
+        //        while(donguSayac < text.length()){
+        //            if(text.charAt(donguSayac)=='b'||text.charAt(donguSayac)=='B'){
+        //                bSayisi++;
+        //            }
+        //            donguSayac++;
+        //
+        //        }
+        //
+        //        System.out.println(bSayisi);
+
+    }
 }

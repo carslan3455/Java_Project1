@@ -2,30 +2,10 @@ import java.util.Scanner;
 
 public class getTotal {
 
-
-      /*
-
-        Given three positive Strings
-        remove all the non numeric numbers.
-        change the Strings to int
-        and print the total
-
-        Example:
-        String num1 = "$15";
-        String num2 = "$20";
-        String num3 = "$30";
-        output should be == 65;
-
-        NOTE : if the output less then 0 change output to -1
-
-     */
-
-
      /*
-     3 tane pozitif String verildiğinde
-     sayısal olmayan tüm karakterleri kaldırın.
-     Stringleri int e çevirin
-     ve total print edin
+     içinde negatif de olabilen sayının ve para sembolünün olduğu aşağıdaki gibi 3 tane String okutunuz.
+     okunan bu 3 string içindeki negatif de olabilen sayıları toplatın.
+     Toplam pozitif ise toplamı yazdırın, eğer toplam negatif ise sadece -1 yazdırın.
 
          Ornek:
         String num1 = "$15";
@@ -33,49 +13,35 @@ public class getTotal {
         String num3 = "$30";
         output ----> 65; olmali
 
-        NOT : Eğer output 0 dan küçük ise outputu -1 e cevir
+        String num1 = "$15";
+        String num2 = "$-80";
+        String num3 = "$30";
+        output ----> -1; olmali
 
 
-
-
-
+        String testString = "$10 $13 $12";
     */
+
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner oku= new Scanner(System.in);
+        String str1=oku.next();
+        String str2=oku.next();
+        String str3=oku.next();
 
-        String allElements = scanner.nextLine();
+        String sayi1=str1.replaceAll("[^0-9, -]", "");
+        String sayi2=str2.replaceAll("[^0-9, -]", "");
+        String sayi3=str3.replaceAll("[^0-9, -]", "");
 
-        String[] elements = allElements.split(" ");
+        int a=Integer.parseInt(sayi1);
+        int b=Integer.parseInt(sayi2);
+        int c=Integer.parseInt(sayi3);
+        int toplam=a+b+c;
 
-        String num1 = elements[0];
+        if (toplam<0) System.out.println(-1);
+        else System.out.println(toplam);
 
-        String num2 = elements[1];
-
-        String num3 = elements[2];
-
-        //  code Start here don't change before this line
-        //   use String num1 , num2 , num3
-
-        // kodu burdan başlatın ve bu satırdan önceki kodlari değiştirmeyin
-        // String num1,num2,num3 kullanın
-
-
-
-
-
-
-        int i1=Integer.parseInt(num1.replaceAll("[^\\d.]", ""));
-        int i2=Integer.parseInt(num2.replaceAll("[^\\d.]", ""));
-        int i3=Integer.parseInt(num3.replaceAll("[^\\d.]", ""));
-        int total=i1+i2+i3;
-
-        if(total>0) {
-            System.out.println(total);
-        }
-
-        }
 
 
     }
-
+}

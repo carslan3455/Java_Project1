@@ -341,7 +341,7 @@ public class test1 {
 
         int intOutput = Integer.parseInt(myOutput);
 
-        Assert.assertTrue("output  362880 olmalı ama sizin output :: " + getOutput(), intOutput==362880);
+        Assert.assertTrue("output  362880 olmalı ama sizin output : " + getOutput(), intOutput==362880);
 
     }
 
