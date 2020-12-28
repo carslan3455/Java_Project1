@@ -15,25 +15,26 @@ public class countE {
         // kodu burdan başlatın ve bu satırdan önceki kodlari değiştirmeyin
 
         String bHali = text.toLowerCase().replaceAll("[^b]","");
+        // bugun bana     bb  text.charAt(0)
 
         int bSayi = bHali.length();
 
         System.out.println(bSayi);
 
 
-        //        int donguSayac = 0;
-        //        int bSayisi = 0;
-        //
-        //
-        //        while(donguSayac < text.length()){
-        //            if(text.charAt(donguSayac)=='b'||text.charAt(donguSayac)=='B'){
-        //                bSayisi++;
-        //            }
-        //            donguSayac++;
-        //
-        //        }
-        //
-        //        System.out.println(bSayisi);
+//                int donguSayac = 0;
+//                int bSayisi = 0;
+//
+//
+//                while(donguSayac < text.length()){
+//                    if(text.charAt(donguSayac)=='b'||text.charAt(donguSayac)=='B'){
+//                        bSayisi++;
+//                    }
+//                    donguSayac++;
+//
+//                }
+//
+//                System.out.println(bSayisi);
 
     }
 }

@@ -14,10 +14,10 @@ public class age {
            Eğer yaş 18 den küçük veya eşit ise
            "dovme yaptirmak icin cok gencsin" şeklinde yazdırın
 
-           Eğer yaş 21 den küçük veya eşit ise
+           Eğer yaş 21 den küçük ise
            "alkol icmek icin cok gencsin" şeklinde yazdırın
 
-           Eğer yaş 21 den büyük ise
+           Eğer yaş 21 den büyük ve esit ise
            "istedigini yapabilirsin"  şeklinde yazdırın
  */
     public static void main(String[] args) {
@@ -28,10 +28,11 @@ public class age {
 
         // kodu burdan baslatin ve bu satirdan onceki kodlari degistirmeyin
 
+
         if (myAge<=10) System.out.println("facebook hesabi acmak icin cok gencsin");
-        if (myAge<=16) System.out.println("ehliyet almak icin cok gencsin");
-        if (myAge<=18) System.out.println("dovme yaptirmak icin cok gencsin");
-        if (myAge<21) System.out.println("alkol icmek icin cok gencsin");
+        else if (myAge<=16) System.out.println("ehliyet almak icin cok gencsin");
+        else if (myAge<=18) System.out.println("dovme yaptirmak icin cok gencsin");
+        else if (myAge<21) System.out.println("alkol icmek icin cok gencsin");
         else System.out.println("istedigini yapabilirsin");
 
 

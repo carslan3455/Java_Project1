@@ -26,7 +26,7 @@ public class printEvenNumbers {
 
         int sayac = 0;
 
-        while (sayac<maxNum) {
+        while (sayac<=maxNum) {
 
             if (sayac % 2 == 0)
                 System.out.println(sayac);
